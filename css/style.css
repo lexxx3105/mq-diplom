@@ -233,7 +233,7 @@ a.menu-link{
     border: 3px solid #796f44;
     opacity: 1;
     position: absolute;
-    top: 150px;
+    bottom: 30px;
     width: 360px;
     margin-left: 20px;
     padding: 15px;
