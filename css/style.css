@@ -32,6 +32,7 @@ header {
     background-size: cover;
     min-height: 450px;
     position: relative;
+
 }
 header::before {
     content: "";
@@ -106,7 +107,7 @@ a.menu-link{
     box-sizing: border-box;
     max-width: 1660px;
     width: 100%;
-    margin: 65px auto;
+    margin: 0 auto;
 }
 .trands-theme {
     font-size: 20px;
@@ -115,14 +116,33 @@ a.menu-link{
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+    padding-top: 65px;
+}
+.trands-theme:after {
+    content: "";
+    display: block;
+    width: 66px;
+    height: 3px;
+    background: #e1d9bd;
+    margin: 0 auto;
+    margin-top: 14px;
+    margin-bottom: 23px;
 }
 .box-trand {
     display: flex;
     height: 320px;
-    width: calc(25% - 3px);
-    position: relative;
+    width: 100%;
+    justify-content: center;
 }
-.box-trand::before {
+.block-trand1 {
+    background-image: url("../images/trend1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 320px;
+    width: 403px;
+}
+.block-trand1::before {
     content: "";
     display: block;
     position: absolute;
@@ -134,9 +154,66 @@ a.menu-link{
     bottom: 0;
     opacity: 0.5;
 }
-.block-trand{
-    padding-right: 4px;
+.block-trand2 {
+    background-image: url("../images/trend2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 320px;
+    width: 403px;
 
+}
+.block-trand2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #000;
+    height: 320px;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+.block-trand3 {
+    background-image: url("../images/trend3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 320px;
+    width: 403px;;
+}
+.block-trand3::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #000;
+    height: 320px;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+.block-trand4 {
+    background-image: url("../images/trend4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 320px;
+    width: 403px;
+}
+.block-trand4::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #000;
+    height: 320px;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.5;
 }
 .trand-tem {
     font-size: 22px;
@@ -156,9 +233,9 @@ a.menu-link{
     border: 3px solid #796f44;
     opacity: 1;
     position: absolute;
-    top: 180px;
-    width: 386px;
-    margin-left: 40px;
+    top: 150px;
+    width: 360px;
+    margin-left: 20px;
     padding: 15px;
     align-items: end;
     z-index: 1;
@@ -479,6 +556,112 @@ input:focus {
     margin-left: 2px;
     line-height: 36px;
 }
+.products {
+    box-sizing: border-box;
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 65px;
+}
+.box-product {
+    display: flex;
+    height: 320px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.border-product {
+    border: 3px solid #b59f5b;
+    position: absolute;
+    left: -25px;
+    top: 170px;
+    width: 345px;
+    height: 266px;
+    padding: 15px;
+    overflow: hidden;
+}
+.block-product1 {
+    background-image: url("../images/shop-item-desk1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 204px;
+    width: 300px;
+}
+.block-product2 {
+    background-image: url("../images/shop-item-desk2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 204px;
+    width: 300px;
+}
+.block-product3 {
+    background-image: url("../images/shop-item-desk3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 204px;
+    width: 300px;
+}
+.product-them {
+    font-size: 22px;
+    font-family: OpenSans, Arial, sans-serif;
+    color: rgb(15, 13, 14);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 40px;
+}
+.text-list {
+    font-size: 15px;
+    font-family: OpenSans, Arial, sans-serif;
+    color: rgb(15, 13, 14);
+    line-height: 1.4;
+    padding-top: 15px;
+}
+.list-link {
+    text-decoration: none;
+    color: #b59f5b;
+}
+.shop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.no-sale {
+    font-size: 15px;
+    font-family: OpenSans, Arial, sans-serif;
+    color: rgb(15, 13, 14);
+    font-weight: bold;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    text-align: left;
+}
+.yes-sale {
+    font-size: 22px;
+    font-family: OpenSans, Arial, sans-serif;
+    color: rgb(15, 13, 14);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+}
+a.button {
+    display: inline-block;
+    margin-top: 18px;
+    height: 48px;
+    background-color:#b59f5b;
+    text-transform: uppercase;
+    color:#ffffff;
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 18px 27px;
+    text-decoration: none;
+    line-height: 1;
+
+}
+
+
 /* подвал */
 .footer {
     width: 1220px;
