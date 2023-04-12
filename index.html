@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -107,7 +107,7 @@
     <main class="main">
         <article>
             <div class="section">
-                <img class="tems-img" src="images\last-post1.jpg" alt="фото">
+                <img class="tems-img" src="images/last-post1.jpg" alt="фото">
                 <div class="conteiner-list">
                     <ul class="tems">
                         <li class="tems-nav">
@@ -280,7 +280,7 @@
                 <label class="text-1-group">
                     <input class="form-text-1" placeholder="Введите Ваш email">
                     <span class="visually-hidden">Поле ввода email</span>
-                    <button name="email" class="submit-btn" type="botton">подписаться</button>
+                    <button name="email" class="submit-btn" type="button">подписаться</button>
                 </label>
             </form>
         </section>
@@ -410,3 +410,42 @@
     </div>
     <p class="end">Copyright © 2009–2019 City Blog LLC.</p>
 </footer>
+<div id="popup" class="popup _hidden">
+    <div class="popup-body">
+        <div class="popup-content">
+            <button class="popup-close" type="button"></button>
+            <span class="popup-title">ваш фидбек</span>
+            <form class="form">
+                <section class="form-group">
+                    <label class="select-group">
+                        <span class="select-label">как часто вы заходите на сайт?</span>
+                        <select class="field">
+                            <option value="every day" selected="">Почти каждый день</option>
+                            <option value="several days">Раз в несколько дней</option>
+                            <option value="weeks">Раз в несколько недель</option>
+                            <option value="year">Несколько раз в год</option>
+                        </select>
+                    </label>
+                </section>
+                <section class="form-group">
+                    <div class="field-group">
+                        <span class="select-label">Вы подписаны на e-mail рассылку?</span>
+                        <input id="yes" type="radio" name="servey" value="yes">
+                        <label for="yes"><span></span>да</label>
+                        <input id="no" type="radio" name="servey" value="no">
+                        <label for="no"><span></span>нет</label>
+                    </div>
+                </section>
+                <section class="form-group">
+                        <span class="select-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+                        <input type="text" class="field-textarea" placeholder="Может, больше рецептов?" required=""></input>
+                </section>
+                <section class="form-group">
+                    <button class="submit-button" type="button">отправить</button>
+                </section>
+            </form>
+
+        </div>
+    </div>
+</div>
+</body>
