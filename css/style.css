@@ -100,9 +100,7 @@ a.menu-link{
     padding-bottom: 145px;
     padding-top: 50px;
 }
-
-
-/* основная часть */
+/* отдельный блок*/
 .trands {
     box-sizing: border-box;
     max-width: 1660px;
@@ -130,9 +128,9 @@ a.menu-link{
 }
 .box-trand {
     display: flex;
-    height: 320px;
-    width: 100%;
-    justify-content: center;
+    max-height: 320px;
+    max-width: 100%;
+    justify-content: space-between;
 }
 .block-trand1 {
     background-image: url("../images/trend1.jpg");
@@ -235,11 +233,12 @@ a.menu-link{
     position: absolute;
     bottom: 30px;
     width: 360px;
-    margin-left: 20px;
+    margin: 0px 20px;
     padding: 15px;
     align-items: end;
     z-index: 1;
 }
+/* основная часть */
 .content {
     display: flex;
     max-width: 1220px;
@@ -731,9 +730,9 @@ p.end {
     padding-top: 73px;
 }
 /* popup */
-/*._hidden {
+._hidden {
 display: none;
-}*/
+}
 .popup {
     position: fixed;
     width: 100%;
@@ -866,8 +865,10 @@ input[type="radio"]:checked + label span {
 }
 .field-textarea {
    display: block;
-   width: 100%;
-   height: 130px;
+   max-width: 100%;
+   min-width: 100%;
+   max-height: 130px;
+   min-height:130px;
    border: none;
    padding: 10px;
 }
