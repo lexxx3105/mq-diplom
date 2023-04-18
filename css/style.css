@@ -60,6 +60,10 @@ header::before {
     justify-content: space-between;
     padding: 44px;
 }
+.menu-burger {
+    display: none;
+}
+
 .menu-list {
     display: flex;
     font-family: OpenSans, Arial, sans-serif;
@@ -100,6 +104,40 @@ a.menu-link{
     text-align: center;
     padding-bottom: 145px;
     padding-top: 50px;
+}
+/*хедер для планшета*/
+@media (max-width: 1199px) {
+   .menu-list {
+      display: none;
+   }
+   .menu-burger {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+   }
+   .menu-burger span {
+      position: absolute;
+      background-color: #ffffff;
+      width: 100%;
+      height: 2px;
+      top: 9px;
+   }
+   .menu-burger:before,
+   .menu-burger:after {
+      content: "";
+      background-color: #ffffff;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+   }
+   .menu-burger:before {
+      top: 0;
+   }
+   .menu-burger:after {
+      bottom: 0;
+   }
 }
 /* отдельный блок*/
 .trands {
@@ -243,6 +281,19 @@ a.menu-link{
     align-items: end;
     z-index: 1;
 }
+/*отдельный блок для планшета*/
+@media (min-width: 360px)  {
+    .box-trand {
+       display: flex;
+       flex-wrap: wrap;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .card-trand {
+       max-width: 50%;
+       padding: 4px;
+    }
+}
+
 /* основная часть */
 .content {
     display: flex;
