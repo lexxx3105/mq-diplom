@@ -32,7 +32,7 @@
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute;
 } 
-div.hidden {
+.hidden {
   display: none;
 }
 .popup {
@@ -84,6 +84,7 @@ div.hidden {
   width: 1px;
   height: 1px;
   clip: rect(1px, 1px, 1px, 1px);
+
 }
 
 .radio-text:before {
@@ -96,6 +97,7 @@ div.hidden {
  background-size: 18px;
  vertical-align: middle;
  margin-right: 5px;
+
 }
 
 .radio-button:checked ~ .radio-text:before {
@@ -113,6 +115,9 @@ select.field {
   background-repeat: no-repeat;
   background-position: right 13px center;
   margin-bottom: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 textarea.field {
@@ -495,6 +500,9 @@ textarea.field {
   font-size: 12px;
   font-weight: bold;
 }
+.meta:hover {
+    border: 3px solid #b59f5b;
+}
 
 .meta-link {
   color: #0f0d0e;
@@ -519,6 +527,9 @@ textarea.field {
   color: #0f0d0e;
   text-decoration: none;
 }
+.topics-link:hover {
+  color: #b59f5b;
+}
 
 .topic-marker {
   position: relative;
@@ -542,7 +553,7 @@ textarea.field {
 .box-product {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 23px;
+  padding: 0px;
 
   display: flex;
   justify-content: space-between;
@@ -552,14 +563,13 @@ textarea.field {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 30%;
 }
 
 .border-product {
-  width: 300px;
-  margin-top: -9px;
-  padding-top: 29px;
-  outline: 3px solid #b59f5b;
-  outline-offset: 20px;
+  margin-top: -30px ;
+  padding: 55px 20px 28px;
+  border: 3px solid #b59f5b;
   flex-grow: 1;
 }
 
